@@ -1,0 +1,101 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_1_input",
+                "id": "flatten_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_1",
+                "id": "flatten_1",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 7850
+            }
+        ],
+        "edges": [
+            [
+                "flatten_1_input",
+                "flatten_1"
+            ],
+            [
+                "flatten_1",
+                "dense_1"
+            ]
+        ]
+    },
+    "epoch": 9,
+    "_timestamp": 1560514821.5579793,
+    "val_loss": 4.336097709655761,
+    "_step": 9,
+    "_runtime": 28.843888759613037,
+    "loss": 4.3133831918080645,
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            1,
+            3,
+            1,
+            3,
+            9,
+            4,
+            7,
+            1,
+            5,
+            1,
+            5,
+            7,
+            7,
+            9,
+            5,
+            7,
+            4,
+            4,
+            3,
+            2,
+            1,
+            6,
+            5,
+            5,
+            3,
+            5,
+            6,
+            3,
+            7,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            6
+        ]
+    },
+    "acc": 0.7308833333333333,
+    "val_acc": 0.7299
+}
